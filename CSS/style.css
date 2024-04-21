@@ -16,6 +16,7 @@ p{
     margin: 0;
     font-size: 1rem;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -23,6 +24,9 @@ a{
 
 .margin_bottom{
     margin-bottom: 1rem;
+}
+.centrar-texto{
+    text-align: center;
 }
 
 /*? HEADER */
@@ -170,13 +174,33 @@ a{
 
 /*? SOBRE MI */
 .sobre{
-    background-color: #EAF2FD;
+    background-color: #d3e3facc;
     padding: 2rem 0;
     line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px){
     .sobre_info{
         width: 80%;
     }
+}
+
+/*? PARA LAS SKILLS*/
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.skill{
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    width: 150px;
+    max-width: 200px;
+    flex-grow: 1;
+    padding: 0.5rem;
+    text-align: center;
 }
