@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
 
-    <!-- FUENTES TEXTP -->
+    <!-- FUENTES TEXTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>Gandhi Salgado</title>
 </head>
@@ -20,15 +23,15 @@
         <div class="logo">
             <svg width="512" height="512" viewBox="0 0 512 512" style="color:#62a0ea" xmlns="http://www.w3.org/2000/svg" class="h-full w-full"><rect width="512" height="512" x="0" y="0" rx="0" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="512px" height="512px" viewBox="0 0 24 24" fill="#62a0ea" x="0" y="0" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><g fill="#62a0ea"><path fill="currentColor" d="M15.521 9.62a1.057 1.057 0 1 1-2.115 0a1.057 1.057 0 0 1 2.115 0zM24 12c0 6.627-5.373 12-12 12c-.35 0-.697-.015-1.04-.044c2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 0 1 0 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031c-.142 1.159-.77 1.88-2.032 2.031c1.168.227 1.83.918 2.031 2.032c-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246c-2.043 1.5-3.759 3.023-3.636 5.149c-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103l-.368 1.267l3.637 1.062l.443-1.181l2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></g></svg></svg>
             
-            <p class="logo_nombre">Mahatma Salgado</p>
+            <p class="logo_nombre formato_titulo">Mahatma Salgado</p>
         </div>
         <div class="header-info">
             <nav class="header_nav">
-                <a class="nav_etiqueta" href="#">Sobre mi</a>
-                <a class="nav_etiqueta" href="#">Skills</a>
-                <a class="nav_etiqueta" href="#">Hobbies</a>
-                <a class="nav_etiqueta" href="#">Formación</a>
-                <a class="nav_etiqueta" href="#">Proyectos</a>
+                <a class="nav_etiqueta" href="#sobreMi">Sobre mi</a>
+                <a class="nav_etiqueta" href="#skills">Skills</a>
+                <a class="nav_etiqueta" href="#hobbies">Hobbies</a>
+                <a class="nav_etiqueta" href="#formacion">Formación</a>
+                <a class="nav_etiqueta" href="#proyectos">Proyectos</a>
             </nav>
             <div class="header_email"><p>gandhi.salgado.ceron@gmail.com</p></div>
         </div>
@@ -37,28 +40,31 @@
     <!-- PARTE PARA EL HERO-->
     <section class="hero contenedor">
         <div class="hero_info">
+            <h1 class="formato_titulo">Hola, mi nombre es Mahatma Gandhi. Soy un apasionado del desarrollo web (Front-End)</h1>
             <div>
-                <h1 class="hero_info_titulo">Hola, mi nombre es Gandhi de México y me estoy preparando para ser desarrollador web</h1>
-            </div>
-            <div>
-                <p class="hero_info_cuerpo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique alias quibusdam error voluptates quas id corporis quam debitis dicta mollitia veritatis qui omnis quos, numquam minus nemo repudiandae atque nesciunt. Me estoy formando en Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam nobis aliquid similique hic aliquam ipsa enim minima ratione officiis sit itaque vitae unde architecto dicta corrupti, commodi earum porro.</p>
+                <p class="formato_texto">
+                    Actualmente soy estudiante en la carrera de ingeniería en Computación en la facultad de ingeniería de la Universidad Nacional Autónoma de México (UNAM).
+                    A lo largo de mi desarrollo académico dentro de la facultad he tenido la oportunidad de tomar cursos, pláticas y conferencias sobre desarrollo web, y me ha encantado. 
+                    Me gusta dedicarle tiempo a mis proyectos y tener una buena metodología de desarrollo con mi equipo de trabajo. 
+                    
+                </p>
             </div>
             <div class="hero_info_links">
                 <nav class="hero_nav">
                     <div>
-                        <a href="#" class="hero_nav_item">GitHub</a>
+                        <a target="_blank" href="https://github.com/Mahatmasalgado" class="hero_nav_item">GitHub</a>
                         <img src="img/icons/arrow.png" alt="flecha">
                     </div>
                     <div>
-                        <a href="#" class="hero_nav_item">Linkedin</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/gandhi-salgado/" class="hero_nav_item">Linkedin</a>
                         <img src="img/icons/arrow.png" alt="flecha">
                     </div>
                     <div>
-                        <a href="#" class="hero_nav_item">Instagram</a>
+                        <a target="_blank" href="https://www.instagram.com/gandhisalgado/" class="hero_nav_item">Instagram</a>
                         <img src="img/icons/arrow.png" alt="flecha">
                     </div>
                     <div>
-                        <a href="#" class="hero_nav_item">Currículo</a>
+                        <a target="_blank" href="#" class="hero_nav_item">Currículo</a>
                         <img src="img/icons/arrow.png" alt="flecha">
                     </div>
                 </nav>
@@ -71,23 +77,27 @@
     </section>
 
     <!-- PARTE PARA SOBRE MÍ-->
-    <section class="sobre">
+    <section class="contenedor_azul" id="sobreMi">
         <div class="contenedor">
+                <h1 class="formato_titulo">Sobre mi</h1>
             <div class="margin_bottom">
-                <h1 class="hero_info_titulo">Sobre mi</h1>
-            </div>
-            <div class="margin_bottom">
-                <p class="hero_info_cuerpo sobre_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illum inventore voluptates saepe aspernatur, quibusdam sequi totam dolores corporis dicta obcaecati consequuntur ratione eligendi sint perferendis quis, laudantium fuga. Cumque.</p>
-                <p class="hero_info_cuerpo sobre_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis dolorum accusantium doloribus animi sit cupiditate culpa quibusdam excepturi, error porro eaque nisi vel vero nobis sapiente, unde soluta dolores!</p>
+                <p class="formato_texto sobre_info">
+                    Soy una persona bastante alegre: me encanta pasar tiempo de calidad con mis amigos, visitando algún lugar bonito con comida exquisita;
+                    me gusta platicar con gente nueva, conocer cosas que no sabía que me gustaban y aprender cosas de desarrollo web por mi cuenta, yendo a mi propio ritmo.
+                    <br>Comparto la filosofía de que nuestro proposito en este mundo es servir a la gente teniendo en sintonía lo que me apasiona, lo que ayudaría al mundo y por lo que me pagarían.
+                    <br>Cuando tengo tiempo libre me gusta leer libros de aventuras o de ayuda personal (un poco de filosofía variada).
+                    <br>Amo el café, tengo años tomando café, tratando de perfeccionar mi paladar y olfato para distinguir lo diferentes sabores y olores del café.
+
+                </p>
             </div>
             <img src="img/firma.png" alt="firma">
         </div>
     </section>
 
-    <!-- PARTE PARA LAS SKILLS-->
-    <section class="contenedor">
-        <h1 class="centrar-texto margin_bottom">Skills</h1>
-        <div class="skills">
+    <!-- PARTE PARA LAS SKILLS y Hobbies-->
+    <section class="contenedor" id="skills">
+        <h1 class="formato_titulo centrar-texto">Skills</h1>
+        <div class="skills margin_bottom">
             <div class="skill">
                 <svg width="64px" height="64px" viewBox="-1 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>html [#1c71d8]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-61.000000, -7639.000000)" fill="#1c71d8"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M19.4350881,7485 L19.4279481,7485 L10.8119794,7485 L11.0180201,7487 L19.2300674,7487 C19.109707,7488.752 18.7455658,7492.464 18.6119454,7494.153 L13.99949,7495.451 L13.99949,7495.455 L13.98929,7495.46 L9.37377458,7493.836 L9.05757353,7490 L11.3199411,7490 L11.4800816,7492.063 L13.99337,7493 L13.99949,7493 L16.5086984,7492.1 L16.7667592,7489 L8.95659319,7489 C8.91885306,7488.599 8.43333144,7483.392 8.34867116,7483 L19.6370488,7483 C19.5738086,7483.66 19.5095484,7484.338 19.4350881,7485 L19.4350881,7485 Z M5,7479 L6.63812546,7497.148 L13.98929,7499 L21.3598345,7497.111 L23,7479 L5,7479 Z" id="html-[#1c71d8]"> </path> </g> </g> </g> </g></svg>
                 <p>HTML5</p>
@@ -109,15 +119,153 @@
                 <p>Java</p>
             </div>
         </div>
+        <!-- PARTE PARA LOS HOBBIES-->
+        <h1 class="formato_titulo centrar-texto" id="hobbies">Hobbies</h1>
+        <div class="skills margin_bottom">
+            <div class="skill">
+                <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#1c71d8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M892.9 145.2H130.1c-33.5 0-60.7 27.2-60.7 60.7v503.4c0 33.4 27.2 60.7 60.7 60.7h762.8c33.5 0 60.7-27.2 60.7-60.7V205.8c0-33.4-27.3-60.6-60.7-60.6z m8.7 564.1c0 4.8-3.9 8.7-8.7 8.7H130.1c-4.8 0-8.7-3.9-8.7-8.7V205.8c0-4.8 3.9-8.7 8.7-8.7h762.8c4.8 0 8.7 3.9 8.7 8.7v503.5zM719.3 823.9h-416c-14.4 0-26 11.6-26 26s11.6 26 26 26h416.1c14.4 0 26-11.6 26-26s-11.7-26-26.1-26z m-83.2-384.8l-173.4-104c-8-4.8-18-4.9-26.2-0.3-8.1 4.6-13.2 13.3-13.2 22.6v208c0 9.4 5 18 13.2 22.6 4 2.3 8.4 3.4 12.8 3.4 4.6 0 9.3-1.3 13.4-3.7l173.4-104c7.8-4.7 12.6-13.2 12.6-22.3 0-9.1-4.8-17.6-12.6-22.3z" fill="#1c71d8"></path></g></svg>
+                <p>Ver series</p>
+            </div>
+            <div class="skill">
+                <svg fill="#1c71d8" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 500.834 500.834" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M25.974,197.999c0.02,9.59,0.17,19.172,0.285,28.757h-9.562C7.592,226.755,0,234.352,0,243.452 c0,9.097,7.592,16.694,16.697,16.694h9.889c0.132,10.516,0.292,21.022,0.312,31.539c0.048,21.53,33.441,21.535,33.395,0 c-0.068-31.229-0.858-62.454-0.926-93.691C59.321,176.468,25.926,176.468,25.974,197.999z"></path> <path d="M393.3,162.75c0.681,21.226,1.274,42.457,2.041,63.672c-97.41-2.173-194.57,10.991-291.953,5.637 c-0.566-21.559-1.272-43.117-2.288-64.67c-1.008-21.439-34.406-21.539-33.393,0c2.679,56.861,3.651,113.754,3.712,170.678 c0.021,21.53,33.416,21.536,33.396,0c-0.028-24.196-0.267-48.388-0.683-72.574c97.601,5.271,194.981-7.968,292.61-5.642 c1.138,23.933,2.641,47.845,4.905,71.721c2.017,21.247,35.425,21.439,33.394,0c-5.322-56.142-6.551-112.487-8.349-168.822 C426.012,141.275,392.614,141.207,393.3,162.75z"></path> <path d="M479.768,224.572c4.428-0.683,0.122-0.048-0.696,0.025c-1.274,0.114-2.563,0.16-3.854,0.218 c-0.96,0.041-1.92,0.02-2.885,0.036c-0.741-11.397-1.238-22.811-1.111-34.267c0.243-21.543-33.149-21.522-33.394,0 c-0.411,36.336,5.185,72.272,6.495,108.529c0.771,21.47,34.175,21.546,33.393,0c-0.497-13.721-1.604-27.391-2.772-41.061 c4.565-0.213,9.104-0.568,13.7-1.274c9.014-1.392,13.863-12.543,11.664-20.541C497.688,226.707,488.761,223.188,479.768,224.572z"></path> </g> </g> </g></svg>
+                <p>Ejercicio</p>
+            </div>
+            <div class="skill">
+                <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21L10 20M12 21L14 20M12 21V18.5M6 18L4 17V14.5M4 9.5V7M4 7L6 6M4 7L6 8M10 4L12 3L14 4M18 6L20 7M20 7L18 8M20 7V9.5M12 11L10 10M12 11L14 10M12 11V13.5M18 18L20 17V14.5" stroke="#1c71d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <p>Jugar Videojuegos</p>
+            </div>
+            <div class="skill">
+                <svg fill="#1c71d8" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="64px" height="64px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="cafe_1_" d="M26,28.36H6v-0.72h20V28.36z M19,26.36h-6c-2.404,0-4.36-1.956-4.36-4.36v-8c0-0.199,0.161-0.36,0.36-0.36h14 c0.199,0,0.36,0.161,0.36,0.36v1.64H25c1.302,0,2.36,1.059,2.36,2.36v2c0,1.302-1.059,2.36-2.36,2.36h-1.654 C23.162,24.597,21.283,26.36,19,26.36z M9.36,14.36V22c0,2.007,1.633,3.64,3.64,3.64h6c2.007,0,3.64-1.633,3.64-3.64v-7.64 C22.64,14.36,9.36,14.36,9.36,14.36z M23.36,21.64H25c0.904,0,1.64-0.735,1.64-1.64v-2c0-0.904-0.735-1.64-1.64-1.64h-1.64V21.64z M20.36,12h-0.72v-1.283c0-0.525,0.124-1.051,0.358-1.52c0.375-0.75,0.375-1.645,0-2.395c-0.234-0.469-0.358-0.995-0.358-1.52V5 h0.721v0.283c0,0.414,0.098,0.829,0.282,1.198c0.476,0.952,0.476,2.087,0,3.039c-0.185,0.369-0.282,0.784-0.282,1.198L20.36,12 L20.36,12z M12.36,12h-0.72v-1.283c0-0.525,0.124-1.05,0.359-1.52c0.375-0.75,0.375-1.645,0-2.395 c-0.235-0.47-0.359-0.995-0.359-1.52V5h0.72v0.283c0,0.414,0.098,0.828,0.283,1.198c0.476,0.952,0.476,2.087,0,3.039 c-0.185,0.37-0.283,0.784-0.283,1.198V12z M16.36,11h-0.72V9.717c0-0.525,0.124-1.05,0.359-1.52c0.375-0.75,0.375-1.645,0-2.395 c-0.235-0.47-0.359-0.995-0.359-1.52V4h0.72v0.283c0,0.414,0.098,0.828,0.283,1.198c0.477,0.952,0.477,2.087,0,3.039 c-0.185,0.37-0.283,0.784-0.283,1.198V11z"></path> <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"></rect> </g></svg>
+                <p>Visitar cafeterías</p>
+            </div>
+            <div class="skill">
+                <svg fill="#1c71d8" height="64px" width="64px" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g id="XMLID_3_"> <path id="XMLID_5_" d="M249.9,189.1h-16V129c0-55.9-47.3-101.4-105.4-101.4C70.4,27.6,23.2,73,23.2,129l0,8c0,12,0,35.3,0,52.2 h-16L7.2,129c0-64.7,54.4-117.4,121.3-117.4c66.9,0,121.4,52.7,121.4,117.4V189.1z"></path> </g> <path id="XMLID_2_" d="M72.4,235.6H39.5v-94.4h32.9C89.4,185,72.4,235.6,72.4,235.6z"></path> <path id="XMLID_1_" d="M184.1,141.2H217v94.4h-32.9C167.1,191.8,184.1,141.2,184.1,141.2z"></path> </g> </g> </g></svg>
+                <p>Escuchar música</p>
+            </div>
+        </div>
     </section>
 
-    <!-- PARTE PARA LOS HOBBIES-->
-
     <!-- PARTE PARA LA FORMACIÓN ACADÉMICA-->
+    <section class="contenedor_azul" id="formacion">
+        <div class="contenedor">
+            <h1 class="formato_titulo centrar-texto">Formación Académica</h1>
+            <div class="formaciones">
+                <div class="formacion">
+                    <div class="formacion_img">
+                        <img src="img/logoUnam.svg" alt="logo de la Universidad Nacional Autónoma de México">
+                    </div>
+                    <p class="formacion_titulo">Ingeniería en Computación</p>
+                    <p class="formacion_info">2021/--, UNAM</p>
+                </div>
+                <div class="formacion">
+                    <div class="formacion_img">
+                        <img src="img/googleCloud.svg" alt="logo de Google Cloud">
+                    </div>
+                    <p class="formacion_titulo">Google Cloud Computing Foundations</p>
+                    <p class="formacion_info">2023, Google Cloud</p>
+                </div>
+                <div class="formacion">
+                    <div class="formacion_img">
+                        <img src="img/alura.png" alt="logo de alura latam">
+                    </div>
+                    <p class="formacion_titulo">Formación Fron-End</p>
+                    <p class="formacion_info">2024, Alura</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- MIS PROYECTOS -->
+    <section class="contenedor" id="proyectos">
+        <h1 class="formato_titulo centrar-texto">Experiencia Profesional</h1>
 
+        <div class="proyectos">
+            <div class="proyecto">
+                <img class="proyecto_img" src="img/encriptador" alt="">
+                <div class="proyecto_info">
+                    <p class="proyecto_titulo">Encriptador de texto</p>
+                    <p class="formato_texto margin_bottom">Challenge propuesto por Alura latam en el programa ONE</p>
+                    <button class="proyecto_boton" type="button">Repositorio</button>
+                    <button class="proyecto_boton" type="button">Web</button>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img class="proyecto_img" src="img/festival" alt="">
+                <div class="proyecto_info">
+                    <p class="proyecto_titulo">Festival Musical</p>
+                    <p class="formato_texto margin_bottom">Página informática de un evento musical</p>
+                    <button class="proyecto_boton" type="button">Repositorio</button>
+                    <button class="proyecto_boton" type="button">Web</button>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto_img" src="img/numeroSecreto" alt="">
+                <div class="proyecto_info">
+                    <p class="proyecto_titulo">Numero Secreto</p>
+                    <p class="formato_texto margin_bottom">Challenge propuesto por Alura latam en el programa ONE </p>
+                    <button class="proyecto_boton" type="button">Repositorio</button>
+                    <button class="proyecto_boton" type="button">Web</button>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto_img" src="img/cafe" alt="">
+                <div class="proyecto_info">
+                    <p class="proyecto_titulo">Blog de Café</p>
+                    <p class="formato_texto margin_bottom">Página informativa sobre café</p>
+                    <button class="proyecto_boton" type="button">Repositorio</button>
+                    <button class="proyecto_boton" type="button">Web</button>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto_img" src="img/galaga" alt="">
+                <div class="proyecto_info">
+                    <p class="proyecto_titulo">Galaga</p>
+                    <p class="formato_texto margin_bottom">Videojuego Galaga en lenguaje Ensamblado</p>
+                    <button class="proyecto_boton" type="button">Repositorio</button>
+                    <button class="proyecto_boton" type="button">Web</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- CONTACTO -->
+    <section class="contenedor_azul">
+        <div class="contenedor formulario">
+            <img class="form_img" src="img/correo_img.png" alt="imagen de correo">
+            <div>
+                <div class="margin_bottom">
+                    <p class="formato_titulo no_margin">Contacto</p>
+                    <p class="formato_texto">¿Quieres contactarme?<br>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+                </div>
+                <form class="form" action="https://formsubmit.co/gandhi.salgado.ceron@gmail.com" method="POST">
+                    <div class="formulario_area">
+                        <label class="form_label" for="name">Nombre: </label>
+                        <input class="form_input" type="text" name="Nombre" id="name" placeholder="Gandhi Salgado" required>
+                    </div>
+    
+                    <div class="formulario_area">
+                        <label class="form_label" for="mail">E-mail: </label>
+                        <input class="form_input" type="email" name="e-mail" id="mail" placeholder="@email.com" required>
+                    </div>
+    
+                    <div class="formulario_area">
+                        <label class="form_label" for="asunto">Asunto: </label>
+                        <input class="form_input" type="text" name="asunto" id="asunto" placeholder="Urgente!" required>
+                    </div>
+    
+                    <div class="formulario_area">
+                        <label class="form_label" for="mensaje">Mensaje: </label>
+                        <textarea rows="7" class="form_input" name="mensaje" id="mensaje" placeholder="Me interesaría..." required></textarea>
+                    </div>
+    
+                    <input class="form_boton" type="submit">
+                    <input type="hidden" name="_next" value="https://mahatmasalgado.github.io/Portafolio/">
+                    <input type="hidden" name="_template" value="table">
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
 </body>
