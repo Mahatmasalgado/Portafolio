@@ -170,7 +170,7 @@ a{
 }
 
 .hero_nav_item{
-    font-size: small;
+    font-size: larger;
     font-weight: 700;
 }
 
@@ -279,6 +279,10 @@ a{
     margin: 0.5rem 0;
 }
 
+.proyecto_nav{
+    margin-top: 2rem;
+}
+
 .proyecto_boton{
     font-weight: 600;
     padding: 1rem;
@@ -299,8 +303,7 @@ a{
 @media (min-width: 1024px){
     .proyecto{
         display: flex;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-evenly;
     }
     .proyecto_img{
         width: 50%;
@@ -360,10 +363,23 @@ a{
 @media (min-width: 1024px){
     .form_img{
         display: inline-block;
+        margin: auto 0;
         width: 30%;
+        height: 100%;
     }
     .formulario{
         display: flex;
         justify-content: space-evenly;
     }
+}
+
+footer{
+    background-color: #FFFFFF;
+    font-weight: 400;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
